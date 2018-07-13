@@ -1,10 +1,22 @@
+@font-face {
+  font-family: 'GothaProMed';
+  src: url("../fonts/gothamPro/GothaProMed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothaProBol';
+  src: url("../fonts/gothamPro/GothaProBol.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: GothaProMed, sans-serif; }
+
 #main {
   background: url("../img/main_bg2.png") no-repeat;
   background-size: cover;
-  padding: 30px 0; }
+  padding-top: 4em; }
   #main ._main_text {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.5em;
     text-transform: uppercase; }
   #main ._tabs {
     width: 100%; }
@@ -12,19 +24,89 @@
       padding: 0;
       list-style-type: none;
       text-align: center;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
     #main ._tabs li {
       display: inline-block;
-      padding: 10px 15px;
+      padding: 15px;
       margin-left: -4px;
       width: 25%; }
     #main ._tabs a {
       text-decoration: none;
       color: #000;
       text-transform: uppercase;
-      padding-top: 5px; }
+      padding-top: 17px; }
     #main ._tabs a:hover {
+      font-family: GothaProBol, sans-serif;
       color: #f0693c;
       border-top: 2px solid #f0693c; }
+
+#main-carousel {
+  position: relative;
+  background-color: #e6e7ed;
+  padding: 4em 0; }
+  #main-carousel .owl-nav {
+    display: block;
+    margin-top: 0; }
+    #main-carousel .owl-nav .owl-prev {
+      position: absolute;
+      top: 45%;
+      left: 10%;
+      background-color: #fff;
+      color: #f0693c;
+      border-radius: 25px;
+      padding: 10px 15px; }
+    #main-carousel .owl-nav .owl-next {
+      position: absolute;
+      top: 45%;
+      right: 10%;
+      background-color: #fff;
+      color: #f0693c;
+      border-radius: 25px;
+      padding: 10px 15px; }
+
+#welcome-text {
+  padding: 4em 0; }
+  #welcome-text ._card {
+    padding: 4em; }
+    #welcome-text ._card img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle; }
+    #welcome-text ._card ._status_pos {
+      color: #818181;
+      font-style: italic; }
+    #welcome-text ._card ._status_name {
+      font-size: 2em; }
+    #welcome-text ._card ._card_text p {
+      font-style: italic; }
+
+#about ._card {
+  background-color: #e6e7ed;
+  padding: 4em; }
+  #about ._card ._card_title {
+    font-size: 2em;
+    text-transform: uppercase; }
+  #about ._card ._card_text {
+    font-style: italic;
+    text-align: center; }
+
+#submissions {
+  padding: 4em 0; }
+  #submissions .sub_bg {
+    background: url("../img/sub_bg.jpg") no-repeat;
+    padding: 4em;
+    width: 100%;
+    text-align: center; }
+    #submissions .sub_bg a {
+      background-color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      padding: 1em 3em; }
+      #submissions .sub_bg a i {
+        color: #f0693c;
+        vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */

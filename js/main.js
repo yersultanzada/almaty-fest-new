@@ -1,6 +1,10 @@
-$('.owl-carousel').owlCarousel({
+$('#main-carousel').owlCarousel({
+    items: 1,
     loop:true,
     margin:10,
     nav:true,
-    items: 1
+    navText: [
+        "<i class='mdi mdi-menu-left'></i>",
+        "<i class='mdi mdi-menu-right'></i>"
+    ]
 });
