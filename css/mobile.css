@@ -1,0 +1,46 @@
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
+    #partners .owl-nav .owl-next{
+        right: -3%;
+        margin: 0;
+    }
+    #partners .owl-nav .owl-prev{
+        left: -3%;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 1090px){
+    #partners .owl-nav{
+        margin-top: 10px;
+    }
+    #partners .owl-nav .owl-prev{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #partners .owl-nav .owl-next{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    #main ._tabs{ border-top: none}
+    #main ._tabs ul{
+        background-color: #fff;
+        margin-bottom: -55px;
+        position: relative;
+        z-index: 5;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    #main ._tabs li{
+        width: 50%;
+    }
+    #main ._tabs li:nth-of-type(2){ border-left: 1px solid #dee2e6;}
+    #main ._tabs li:nth-of-type(3){ border-top: 1px solid #dee2e6}
+    #main ._tabs li:nth-of-type(4){ border-left: 1px solid #dee2e6; border-top: 1px solid #dee2e6}
+    #main ._tabs a{ padding-top: 0; padding-bottom: 17px}
+    #main ._tabs a:hover{ border-bottom: 2px solid #f0693c; border-top: none}
+
+    #slider{ padding-top: 6em; padding-bottom: 2em}
+    #slider .owl-nav{ display: block}
+}

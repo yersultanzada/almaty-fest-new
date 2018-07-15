@@ -14,8 +14,27 @@
   font-style: normal;
 
 }
+@font-face {
+  font-family: "LoraRegular";
+  src: url("../fonts/lora/LoraRegular.eot");
+  src: url("../fonts/lora/LoraRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/lora/LoraRegular.woff") format("woff"),
+  url("../fonts/lora/LoraRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LoraItalic";
+  src: url("../fonts/lora/LoraItalic.eot");
+  src: url("../fonts/lora/LoraItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/lora/LoraItalic.woff") format("woff"),
+  url("../fonts/lora/LoraItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 
 $orange: #f0693c;
+$border-color: #dee2e6;
 body { font-family: GothaProMed, sans-serif;}
 #main {
   background: url("../img/main_bg2.png") no-repeat;
@@ -28,6 +47,7 @@ body { font-family: GothaProMed, sans-serif;}
   }
   ._tabs {
     width: 100%;
+    border-top: 1px solid $border-color;
 
     ul {
       padding: 0;
@@ -39,7 +59,7 @@ body { font-family: GothaProMed, sans-serif;}
     li {
       display: inline-block;
       padding: 15px;
-      margin-left: -4px;
+      margin-left: -5px;
       width: 25%;
     }
     a {
@@ -56,17 +76,16 @@ body { font-family: GothaProMed, sans-serif;}
   }
 
 }
-#main-carousel {
+#slider {
   position: relative;
   background-color: #e6e7ed;
   padding: 4em 0;
 
   .owl-nav {
-    display: block;
-    margin-top: 0;
+    display: none;
 
-    .owl-prev { position: absolute; top: 45%; left: 10%; background-color: #fff; color: $orange; border-radius: 25px; padding: 10px 15px}
-    .owl-next { position: absolute; top: 45%; right: 10%; background-color: #fff; color: $orange; border-radius: 25px; padding: 10px 15px}
+    .owl-prev { background-color: #fff; color: $orange; border-radius: 25px; padding: 10px 15px}
+    .owl-next { background-color: #fff; color: $orange; border-radius: 25px; padding: 10px 15px}
   }
 }
 
@@ -81,9 +100,9 @@ body { font-family: GothaProMed, sans-serif;}
       height: auto;
       vertical-align: middle;
     }
-    ._status_pos { color: #818181; font-style: italic}
-    ._status_name { font-size: 2em}
-    ._card_text p { font-style: italic}
+    ._status_pos { color: #818181; font-family: LoraItalic, sans-serif; }
+    ._status_name { font-family: GothaProBol, sans-serif; font-size: 1.5em; text-transform: uppercase}
+    ._card_text p { font-family: LoraItalic, sans-serif;}
   }
 }
 
@@ -92,21 +111,22 @@ body { font-family: GothaProMed, sans-serif;}
     background-color: #e6e7ed;
     padding: 4em;
 
-    ._card_title { font-size: 2em; text-transform: uppercase}
-    ._card_text { font-style: italic; text-align: center}
+    ._about_title { font-size: 1.8em; text-transform: uppercase}
+    ._about_text { font-family: LoraItalic, sans-serif; text-align: center}
   }
 }
 
 #submissions {
   padding: 4em 0;
 
-  .sub_bg {
+  ._sub_bg {
     background: url("../img/sub_bg.jpg") no-repeat;
     padding: 4em;
     width: 100%;
     text-align: center;
 
     a {
+      font-family: GothaProBol, sans-serif;
       background-color: #fff;
       text-align: center;
       text-transform: uppercase;
@@ -120,4 +140,29 @@ body { font-family: GothaProMed, sans-serif;}
       }
     }
   }
+}
+#partners {
+  padding-bottom: 4em;
+
+  ._partners_title { font-size: 1.8em; text-transform: uppercase}
+  .owl-carousel img { width: initial; margin: auto}
+  .owl-nav {
+    display: block;
+    margin-top: 0;
+
+    .owl-prev { position: absolute; top: 30%; left: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px}
+    .owl-next { position: absolute; top: 30%; right: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px}
+  }
+}
+#footer {
+  padding: 4em 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 4em;
+
+  .contacts_title { font-family: GothaProBol, sans-serif; text-transform: uppercase}
+  .contacts_address, .contacts_tel { font-family: LoraRegular, sans-serif;}
+  .contacts_social a { display: inline-block; background-color: #dbdbdb; padding: 10px 14px; margin-right: 5px; margin-bottom: 5px; color: #fff; border-radius: 25px}
+  .contacts_social a:hover { background-color: $orange}
+  .contacts_tel a { text-decoration: none; color: #000}
 }
