@@ -1,3 +1,16 @@
+/****************** Exclusive for popup **********************/
+@media only screen and (min-width: 1023px) and (max-width: 1200px){
+    .main_popup ._timer{
+        left: 22%;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1420px){
+    .main_popup ._timer{
+        left: 26%;
+    }
+}
+/****************** End exclusive for popup **********************/C
+
 @media only screen and (min-width: 1200px) and (max-width: 1300px){
     #partners .owl-nav .owl-next{
         right: -3%;
@@ -23,7 +36,15 @@
         right: 0;
     }
 }
+@media only screen and (max-width: 992px){
+    #header .container { max-width: inherit}
+}
 @media only screen and (max-width: 768px){
+    #header .container{ padding: 0}
+    #header .row{ margin: 0}
+    #header .row .col-6{ padding: 0}
+    #header ._header_menu ._dropdown_menu{ min-width: 100vw}
+
     #main ._tabs{ border-top: none}
     #main ._tabs ul{
         background-color: #fff;
@@ -43,4 +64,9 @@
 
     #slider{ padding-top: 6em; padding-bottom: 2em}
     #slider .owl-nav{ display: block}
+}
+@media only screen and (max-width: 576px){
+    #main ._main_logo img{ width: 200px}
+    #main ._tabs a{ padding-bottom: 0}
+    #welcome-text ._card{ padding: 2em;}
 }
