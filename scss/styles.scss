@@ -35,8 +35,17 @@
 
 $orange: #f0693c;
 $border-color: #dee2e6;
+
+/* common */
 body { font-family: GothaProMed, sans-serif;}
 
+._title {
+  font-size: 1.8em; text-transform: uppercase;
+}
+._card {
+  border: 1px solid $border-color;
+}
+/* main page */
 .main_popup {
   display: none;
   position: fixed;
@@ -262,11 +271,10 @@ body { font-family: GothaProMed, sans-serif;}
 }
 
 #about {
-  ._card {
+  ._about_card {
     background-color: #e6e7ed;
     padding: 4em;
 
-    ._about_title { font-size: 1.8em; text-transform: uppercase}
     ._about_text { font-family: LoraItalic, sans-serif; text-align: center}
   }
 }
@@ -300,7 +308,6 @@ body { font-family: GothaProMed, sans-serif;}
 #partners {
   padding-bottom: 4em;
 
-  ._partners_title { font-size: 1.8em; text-transform: uppercase}
   .owl-carousel img { width: initial; margin: auto}
   .owl-nav {
     display: block;
@@ -322,3 +329,22 @@ body { font-family: GothaProMed, sans-serif;}
   .contacts_social a:hover { background-color: $orange}
   .contacts_tel a { text-decoration: none; color: #000}
 }
+
+/* content page */
+.content {
+  #about {
+    padding: 4em 0;
+
+    ._card {
+      padding: 4em;
+    }
+  }
+  #awards {
+    padding: 4em 0;
+
+    ._card {
+      padding: 4em;
+    }
+  }
+}
+
