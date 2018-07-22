@@ -346,5 +346,21 @@ body { font-family: GothaProMed, sans-serif;}
       padding: 4em;
     }
   }
+  #team {
+    padding: 4em 0;
+
+    .team_img img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+  #partners {
+    padding: 4em 0;
+
+    .inner_carousel img {
+      width: 150px;
+    }
+  }
 }
 

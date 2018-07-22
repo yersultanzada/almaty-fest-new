@@ -310,5 +310,15 @@ body {
   padding: 4em 0; }
   .content #awards ._card {
     padding: 4em; }
+.content #team {
+  padding: 4em 0; }
+  .content #team .team_img img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; }
+.content #partners {
+  padding: 4em 0; }
+  .content #partners .inner_carousel img {
+    width: 150px; }
 
 /*# sourceMappingURL=styles.css.map */
