@@ -331,35 +331,24 @@ body { font-family: GothaProMed, sans-serif;}
 }
 
 /* content page */
-.content {
-  #about {
+.content_page {
+  .content {
     padding: 4em 0;
 
     ._card {
       padding: 4em;
     }
-  }
-  #awards {
-    padding: 4em 0;
-
-    ._card {
-      padding: 4em;
+    #team {
+      .team_img img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+      }
     }
-  }
-  #team {
-    padding: 4em 0;
-
-    .team_img img {
-      max-width: 100%;
-      height: auto;
-      vertical-align: middle;
-    }
-  }
-  #partners {
-    padding: 4em 0;
-
-    .inner_carousel img {
-      width: 150px;
+    #partners {
+      .inner_carousel img {
+        width: 150px;
+      }
     }
   }
 }

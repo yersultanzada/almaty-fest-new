@@ -302,23 +302,15 @@ body {
     color: #000; }
 
 /* content page */
-.content #about {
+.content_page .content {
   padding: 4em 0; }
-  .content #about ._card {
+  .content_page .content ._card {
     padding: 4em; }
-.content #awards {
-  padding: 4em 0; }
-  .content #awards ._card {
-    padding: 4em; }
-.content #team {
-  padding: 4em 0; }
-  .content #team .team_img img {
+  .content_page .content #team .team_img img {
     max-width: 100%;
     height: auto;
     vertical-align: middle; }
-.content #partners {
-  padding: 4em 0; }
-  .content #partners .inner_carousel img {
+  .content_page .content #partners .inner_carousel img {
     width: 150px; }
 
 /*# sourceMappingURL=styles.css.map */
