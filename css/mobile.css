@@ -9,32 +9,26 @@
         left: 26%;
     }
 }
-/****************** End exclusive for popup **********************/C
+/****************** End exclusive for popup **********************/
 
 @media only screen and (min-width: 1200px) and (max-width: 1300px){
-    #partners .owl-nav .owl-next{
+    #partners .owl-nav .owl-next, .content .owl-nav .owl-next{
         right: -3%;
         margin: 0;
     }
-    #partners .owl-nav .owl-prev{
+    #partners .owl-nav .owl-prev, .content .owl-nav .owl-prev{
         left: -3%;
         margin: 0;
     }
 }
 @media only screen and (max-width: 1090px){
-    #partners .owl-nav{
-        margin-top: 10px;
-    }
-    #partners .owl-nav .owl-prev{
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    #partners .owl-nav .owl-next{
-        position: relative;
-        top: 0;
-        right: 0;
-    }
+    #partners .owl-nav{ margin-top: 10px;}
+    #partners .owl-nav .owl-prev{ position: relative; top: 0; left: 0;}
+    #partners .owl-nav .owl-next{ position: relative; top: 0; right: 0;}
+
+    .content_page .content .owl-nav{ margin-top: 10px;}
+    .content_page .content .owl-nav .owl-prev{ position: relative; top: 0; left: 0;}
+    .content_page .content .owl-nav .owl-next{ position: relative; top: 0; right: 0;}
 }
 @media only screen and (max-width: 992px){
     #header .container { max-width: inherit}
@@ -48,7 +42,7 @@
     #main ._tabs{ border-top: none}
     #main ._tabs ul{
         background-color: #fff;
-        margin-bottom: -55px;
+        /*margin-bottom: -55px;*/
         position: relative;
         z-index: 5;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
@@ -64,9 +58,15 @@
 
     #slider{ padding-top: 6em; padding-bottom: 2em}
     #slider .owl-nav{ display: block}
+
+    .content_page .content .table td{ display: block}
+    .content_page .content .table td .team_img{ text-align: center}
 }
 @media only screen and (max-width: 576px){
     #main ._main_logo img{ width: 200px}
     #main ._tabs a{ padding-bottom: 0}
     #welcome-text ._card{ padding: 2em;}
+    #about ._about_card{ padding: 2em}
+    .content_page .content .table td .team_img img{ width: 260px}
+    .content_page .content ._card{ padding: 2em}
 }

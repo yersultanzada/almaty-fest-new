@@ -45,6 +45,11 @@ body { font-family: GothaProMed, sans-serif;}
 ._card {
   border: 1px solid $border-color;
 }
+.table td {
+  img {
+    width: 330px;
+  }
+}
 /* main page */
 .main_popup {
   display: none;
@@ -308,13 +313,13 @@ body { font-family: GothaProMed, sans-serif;}
 #partners {
   padding-bottom: 4em;
 
-  .owl-carousel img { width: initial; margin: auto}
+  .owl-carousel img { width: 150px !important; margin: auto}
   .owl-nav {
     display: block;
     margin-top: 0;
 
-    .owl-prev { position: absolute; top: 30%; left: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px}
-    .owl-next { position: absolute; top: 30%; right: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px}
+    .owl-prev { position: absolute; top: 30%; left: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px;}
+    .owl-next { position: absolute; top: 30%; right: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px;}
   }
 }
 #footer {
@@ -337,17 +342,45 @@ body { font-family: GothaProMed, sans-serif;}
 
     ._card {
       padding: 4em;
-    }
-    #team {
-      .team_img img {
+
+      img {
+        text-align: center;
         max-width: 100%;
         height: auto;
         vertical-align: middle;
+        margin-top: 2em;
       }
     }
-    #partners {
-      .inner_carousel img {
-        width: 150px;
+    .owl-carousel img { width: 150px !important; margin: auto}
+    .owl-nav {
+      display: block;
+      margin-top: 0;
+
+      .owl-prev { position: absolute; top: 30%; left: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px;}
+      .owl-next { position: absolute; top: 30%; right: -6%; background-color: transparent; color: $orange; border: 1px solid $orange; border-radius: 25px; padding: 10px 15px;}
+    }
+    #programs {
+      .program_film {
+        margin-bottom: 20px;
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+        a:hover {
+          color: $orange;
+        }
+        .film_img img {
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        .film_title {
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 1em;
+          line-height: 1.2;
+        }
       }
     }
   }

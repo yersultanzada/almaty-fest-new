@@ -31,6 +31,9 @@ body {
 ._card {
   border: 1px solid #dee2e6; }
 
+.table td img {
+  width: 330px; }
+
 /* main page */
 .main_popup {
   display: none;
@@ -253,7 +256,7 @@ body {
 #partners {
   padding-bottom: 4em; }
   #partners .owl-carousel img {
-    width: initial;
+    width: 150px !important;
     margin: auto; }
   #partners .owl-nav {
     display: block;
@@ -306,11 +309,51 @@ body {
   padding: 4em 0; }
   .content_page .content ._card {
     padding: 4em; }
-  .content_page .content #team .team_img img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle; }
-  .content_page .content #partners .inner_carousel img {
-    width: 150px; }
+    .content_page .content ._card img {
+      text-align: center;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      margin-top: 2em; }
+  .content_page .content .owl-carousel img {
+    width: 150px !important;
+    margin: auto; }
+  .content_page .content .owl-nav {
+    display: block;
+    margin-top: 0; }
+    .content_page .content .owl-nav .owl-prev {
+      position: absolute;
+      top: 30%;
+      left: -6%;
+      background-color: transparent;
+      color: #f0693c;
+      border: 1px solid #f0693c;
+      border-radius: 25px;
+      padding: 10px 15px; }
+    .content_page .content .owl-nav .owl-next {
+      position: absolute;
+      top: 30%;
+      right: -6%;
+      background-color: transparent;
+      color: #f0693c;
+      border: 1px solid #f0693c;
+      border-radius: 25px;
+      padding: 10px 15px; }
+  .content_page .content #programs .program_film {
+    margin-bottom: 20px; }
+    .content_page .content #programs .program_film a {
+      color: #000;
+      text-decoration: none; }
+    .content_page .content #programs .program_film a:hover {
+      color: #f0693c; }
+    .content_page .content #programs .program_film .film_img img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle; }
+    .content_page .content #programs .program_film .film_title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 1em;
+      line-height: 1.2; }
 
 /*# sourceMappingURL=styles.css.map */

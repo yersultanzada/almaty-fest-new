@@ -51,17 +51,13 @@ $(document).ready(function () {
         ],
         responsive:{
             0:{
-                items:2,
-                nav:true
+                items:2
             },
             600:{
-                items:3,
-                nav:false
+                items:3
             },
             1000:{
-                items:5,
-                nav:true,
-                loop:false
+                items:5
             }
         }
     });
@@ -80,16 +76,13 @@ $(document).ready(function () {
         ],
         responsive:{
             0:{
-                items:2,
-                nav:true
+                items:2
             },
             600:{
-                items:3,
-                nav:false
+                items:3
             },
             1000:{
-                items:5,
-                nav:true
+                items:5
             }
         }
     });
@@ -108,16 +101,13 @@ $(document).ready(function () {
         ],
         responsive:{
             0:{
-                items:2,
-                nav:true
+                items:2
             },
             600:{
-                items:3,
-                nav:false
+                items:3
             },
             1000:{
-                items:4,
-                nav:true
+                items:4
             }
         }
     });
@@ -136,16 +126,63 @@ $(document).ready(function () {
         ],
         responsive:{
             0:{
-                items:2,
-                nav:true
+                items:2
             },
             600:{
-                items:3,
-                nav:false
+                items:3
             },
             1000:{
-                items:3,
-                nav:true
+                items:3
+            }
+        }
+    });
+    $('#inner_progCarousel').owlCarousel({
+        items: 5,
+        loop:true,
+        margin:10,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        nav:true,
+        navText: [
+            "<i class='mdi mdi-menu-left'></i>",
+            "<i class='mdi mdi-menu-right'></i>"
+        ],
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    $('#inner_aboutAlmaty').owlCarousel({
+        items: 5,
+        loop:true,
+        margin:10,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        nav:true,
+        navText: [
+            "<i class='mdi mdi-menu-left'></i>",
+            "<i class='mdi mdi-menu-right'></i>"
+        ],
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
             }
         }
     });
