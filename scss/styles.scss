@@ -46,6 +46,8 @@ body { font-family: GothaProMed, sans-serif;}
   border: 1px solid $border-color;
 }
 .table td {
+  padding: 1.25em;
+
   img {
     width: 330px;
   }
@@ -90,7 +92,7 @@ body { font-family: GothaProMed, sans-serif;}
       top: 64px;
       left: 0;
       z-index: 100;
-      min-width: 260px;
+      min-width: 300px;
       background-color: #7e1420;
       border-radius: 0;
 
@@ -105,7 +107,7 @@ body { font-family: GothaProMed, sans-serif;}
           border-bottom: 1px solid #cb656d;
           li {
             display: table-cell;
-            padding: 15px 5px;
+            padding: 1em 1.5em;
             a {
               font-size: 13px;
             }
@@ -125,7 +127,7 @@ body { font-family: GothaProMed, sans-serif;}
 
         i { float: right}
       }
-      ._dropdown_item.activated {
+      ._dropdown_item._activated {
         i { transform: rotateX(180deg)}
       }
       ._dropdown_inner {
@@ -142,13 +144,43 @@ body { font-family: GothaProMed, sans-serif;}
               color: #cb656d;
               text-transform: capitalize;
               width: 100%;
-              padding: 10px 10px 10px 24px;
+              padding: 0.75rem 1.5rem;
             }
           }
-          hr { margin-left: 24px; background: #cb656d}
+          hr { margin-left: 1.5rem; background: #cb656d}
         }
       }
-      ._dropdown_inner.visible {display: block}
+      ._dropdown_inner._visible {display: block}
+
+      ._dropdown_item_inner {
+        cursor: pointer;
+
+        i { float: right}
+      }
+      ._dropdown_item_inner._activated {
+        i { transform: rotateX(180deg)}
+      }
+      ._dropdown_inner_child {
+        display: none;
+        ul {
+          list-style-type: none;
+          margin-bottom: 0;
+          padding-left: 0;
+
+          li {
+            a {
+              display: inline-block;
+              font-family: LoraItalic, sans-serif;
+              color: #cb656d;
+              text-transform: capitalize;
+              width: 100%;
+              padding: 10px 10px 10px 48px;
+            }
+          }
+          hr { margin-left: 48px; background: #cb656d}
+        }
+      }
+      ._dropdown_inner_child._visible {display: block}
     }
     ._dropdown_menu._show { display: block}
   }
