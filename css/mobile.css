@@ -60,7 +60,7 @@
     #main ._tabs a{ padding-top: 0; padding-bottom: 17px}
     #main ._tabs a:hover{ border-bottom: 2px solid #f0693c; border-top: none}
 
-    #slider{ padding-top: 6em; padding-bottom: 2em}
+    #slider{ padding-bottom: 1em}
     #slider .owl-nav{ display: block}
 
     .content_page .content .table td{ display: block; padding: 1.5em}

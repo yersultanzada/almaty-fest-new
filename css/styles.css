@@ -219,8 +219,7 @@ body {
 
 #slider {
   position: relative;
-  background-color: #e6e7ed;
-  padding: 4em 0; }
+  background-color: #e6e7ed; }
   #slider .owl-nav {
     display: none; }
     #slider .owl-nav .owl-prev {
