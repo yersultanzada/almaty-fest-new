@@ -36,6 +36,9 @@ body {
   .table td img {
     width: 330px; }
 
+#header-helper {
+  height: 64px; }
+
 /* main page */
 .main_popup {
   display: none;
@@ -273,7 +276,8 @@ body {
       color: #000;
       text-decoration: none;
       padding: 1em 3em;
-      white-space: inherit; }
+      white-space: inherit;
+      line-height: 1; }
       #submissions ._sub_bg a i {
         color: #f0693c;
         vertical-align: middle; }

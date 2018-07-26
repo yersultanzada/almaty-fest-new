@@ -52,6 +52,9 @@ body { font-family: GothaProMed, sans-serif;}
     width: 330px;
   }
 }
+#header-helper {
+  height: 64px;
+}
 /* main page */
 .main_popup {
   display: none;
@@ -333,6 +336,7 @@ body { font-family: GothaProMed, sans-serif;}
       text-decoration: none;
       padding: 1em 3em;
       white-space: inherit;
+      line-height: 1;
 
       i {
         color: $orange;
